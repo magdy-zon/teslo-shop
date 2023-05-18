@@ -21,6 +21,8 @@ yarn install
 docker-compose up -d
 ```
 
-6. Levantar proyecto:
+6. Ejecutar endpoint GET /api/seed
+
+7. Levantar proyecto:
 ```yarn start:dev```
 
