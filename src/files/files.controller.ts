@@ -8,12 +8,13 @@ import {
   UploadedFile, 
   UseInterceptors 
 } from '@nestjs/common';
-import { FilesService } from './files.service';
 import { FileInterceptor } from '@nestjs/platform-express';
-import { fileFilter, fileNamer } from './helpers';
+import { ConfigService } from '@nestjs/config';
+
 import { diskStorage } from 'multer';
 import { Response } from 'express';
-import { ConfigService } from '@nestjs/config';
+import { FilesService } from './files.service';
+import { fileFilter, fileNamer } from './helpers';
 
 @Controller('files')
 export class FilesController {
